@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>웹 접근성 관련 최적화 해보기</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="pratice page">웹 접근성 최적화 연습 페이지!📃</h1>
+      <nav id="navigation bar">
+        <ul role="group" aria-labelledby="navigation bar">
+          <li aria-label="메뉴1로 이동하는 링크" tabindex="0">
+            <a href="/" role="“navigation”">메뉴1</a>
+          </li>
+          <li aria-label="메뉴2로 이동하는 링크" tabindex="1">
+            <a href="/" role="“navigation”">메뉴2</a>
+          </li>
+          <li aria-label="메뉴3으로 이동하는 링크" tabindex="2">
+            <a href="/" role="“navigation”">메뉴3</a>
+          </li>
+          <li aria-label="메뉴4로 이동하는 링크" tabindex="3">
+            <a href="/" role="“navigation”">메뉴4</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <section>
+          <h1 id="complaints">민원</h1>
+          <ul role="group" aria-labelledby="complaints">
+            <li aria-label="민원 신청으로 이동하는 링크" tabindex="4">
+              <a href="/" role="navigation">민원신청📃</a>
+            </li>
+            <li aria-label="나만의 상담실로 이동하는 링크" tabindex="5">
+              <a href="/" role="navigation">나만의 상당심⚠️</a>
+            </li>
+            <li aria-label="민원시작으로 이동하는 링크" tabindex="6">
+              <a href="/" role="navigation">민원시작🛫</a>
+            </li>
+            <li aria-label="민원 조회로 이동하는 링크" tabindex="7">
+              <a href="/" role="navigation">민원 조회👋</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1 id="consultation">민원상담</h1>
+          <ul role="group" aria-labelledby="consultation">
+            <li aria-label="채팅로봇 페이지로 이동하는 링크" tabindex="8">
+              <a href="/" role="navigation">채팅 로봇🤖</a>
+            </li>
+            <li aria-label="민원상담 전화번호" tabindex="9">1588-0000 📞</li>
+            <li aria-label="웹 인증서 페이지로 이동하는 링크" tabindex="10">
+              <a href="/" role="navigation">웹 인증서 🤨</a>
+            </li>
+            <li aria-label="민원 상담조회로 이동하는 링크" tabindex="11">
+              <a href="/" role="navigation">민원상담 조회👋</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1 id="communication">소통</h1>
+          <ul role="group" aria-labelledby="communication">
+            <li aria-label="페이스북으로 이동하는 링크" tabindex="12">
+              <a href="/" role="navigation">페이스북</a>
+            </li>
+            <li aria-label="인스타그램으로 이동하는 링크" tabindex="13">
+              <a href="/" role="navigation">인스타그램</a>
+            </li>
+            <li aria-label="네이버블로그로 이동하는 링크" tabindex="14">
+              <a href="/" role="navigation">네이버블로그</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <article class="article1">
+        <h1>안녕하세요 웹 접근성 연습하는 페이지 입니다</h1>
+        <img
+          src="./img/홀리.png"
+          alt="메인 페이지에서 사람이 돈을 건내 받는 사진"
+        />
+      </article>
+      <article class="article2">
+        <div role="group" aria-labelledby="notice">
+          <h1 tabindex="15" id="notice">공지사항</h1>
+          <ul>
+            <li>공지사항'24년 6월 17일자 대체복무요원 추가소집 계획</li>
+            <li>
+              현역병입영 본인선택원 추가 접수('24.6.5.(수) 14시 접수 시작)
+            </li>
+            <li>
+              안내2024-06-032025년도 병역지정업체 선정 및 인원배정 기준 관보
+            </li>
+          </ul>
+        </div>
+        <div role="group" aria-labelledby="law information">
+          <h1 class="group2" tabindex="19" id="law information">법령정보</h1>
+          <ul>
+            <li>
+              사회복무요원 소집업무 규정」일부 개정안 행정예고2024-05-28「현역병
+              모집업무
+            </li>
+            <li>
+              현역병입영 본인선택원 추가 접수('24.6.5.(수) 14시 접수 시작)
+            </li>
+            <li>
+              안내2024-06-032025년도 병역지정업체 선정 및 인원배정 기준 관보
+            </li>
+          </ul>
+        </div>
+        <button tabindex="23" aria-label="더보기 버튼" role="button">
+          더보기
+        </button>
+      </article>
+    </main>
+    <footer>
+      <p>
+        (우)35208 대전광역시 서구 청사로 189, 정부대전청사 2동 / 대표전화 :
+        1588-9090(유료 / 월∼금 09:00~18:00, 공휴일 제외) Copyrightⓒ Military
+        Manpower Administration. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
